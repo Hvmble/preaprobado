@@ -1,0 +1,16 @@
+// Globals
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globals';
+
+//Containers
+@import 'containers/header';
+@import 'containers/navigation';
+@import 'containers/form';
+
+//Components
+@import 'components/title';
+@import 'components/input';
+@import 'components/bankButton';
+@import 'components/details';

@@ -1,0 +1,140 @@
+form {
+    div.tab {
+        .btn {
+            height: 3rem;
+            width: 10rem;
+            background-color: $gray;
+            margin: 0 0.4rem;
+            color: $yellow;
+            cursor: pointer;
+            border-top: 0.5px solid $yellow;
+            border-left: 0.5px solid $yellow;
+            border-right: 0.5px solid $yellow;
+            border-bottom: 0px;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        .active {
+            background-color: $blue;
+            color: $white;
+            opacity: 0.5;
+
+        }
+
+    }
+    div.section {
+        position: relative;
+        padding: 3rem;
+        background-color: $gray;
+        border-radius: 0 0 1.2rem 1.2rem;
+        box-shadow: 4px 4px 7px 2px rgb(0 0 0 / 10%);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.6rem;
+        align-items: center;
+
+        .date {
+            margin-top: 1.8rem;
+        }
+    }
+
+    .result {
+        display: flex;
+        justify-content: center;
+        button {
+            height: 4rem;
+            width: 18rem;
+            font-size: 2.2rem;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(42, 63, 117, 1) 100%);
+            margin: 4rem 0;
+            color: $white;
+            cursor: pointer;
+            border: 1px solid $yellow;
+            border-radius: 5px;
+            opacity: 0.9;
+            transition:  0.3s;
+            &:disabled{
+                opacity: 0.5;
+            }
+            &:hover{
+                
+                background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(42,63,117,1) 100%);
+            }
+        }
+    }
+}
+
+.section__result {
+    position: relative;
+    text-align: center;
+    padding: 4rem;
+    margin-bottom: 3rem;
+    background-color: $gray;
+    border-radius: 0 0 1.2rem 1.2rem;
+    box-shadow: 4px 4px 7px 2px rgb(0 0 0 / 10%);
+
+    .section__buttons {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        text-align: center;
+        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+        margin: 5rem 0 2rem 0;
+        font-weight: 600;
+    }
+
+    .inputs {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.6rem;
+        text-align: start;
+        margin: 3rem 0 1rem 0;
+    }
+
+    .button {
+        display: block;
+        height: 3.5rem;
+        width: 18rem;
+        font-size: 1.4rem;
+        font-weight: 100;
+        padding: 0.8rem 1rem;
+        background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(42, 63, 117, 1) 100%);
+        margin: 2rem auto;
+        color: $white;
+        cursor: pointer;
+        border: 1px solid $yellow;
+        border-radius: 8px;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+}
+#infoEconomy {
+    padding-bottom: 6rem;
+}
+.btn__coowner{
+    display: block;
+        height: 3.5rem;
+        width: 18rem;
+        font-size: 1.4rem;
+        font-weight: 100;
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(42, 63, 117, 1) 100%);
+        margin: 1.5rem auto 0rem auto;
+        color: $white;
+        cursor: pointer;
+        border: 1px solid $yellow;
+        border-radius: 8px;
+        &:disabled{
+            opacity: 0.5;
+        }
+        &:hover{
+            background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(42,63,117,1) 100%);
+        }
+}
+.animate__animated.animate__fadeIn {
+    --animate-duration: 1.5s;
+  }

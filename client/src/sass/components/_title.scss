@@ -1,0 +1,32 @@
+h2.title{
+    position: relative;
+    font-size: 1.8rem;
+    text-align: center;
+    color: $blue;
+    max-width: 25rem;
+    margin: 2.2rem auto;
+}
+.title__large{
+    max-width: 32rem !important;
+}
+h2:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 0.1rem;
+    background: $yellow;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+h2:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 0.1rem;
+    background: $yellow;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}

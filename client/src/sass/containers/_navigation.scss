@@ -1,0 +1,33 @@
+div.container__navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: $gray;
+    padding: 1.2rem 3rem;
+    margin-top: 4rem;
+    border-radius:  1.2rem;
+    box-shadow: 2px 1px 0px 2px rgb(0 0 0 / 10%);
+    
+a.container__number{
+    display: flex;
+    align-items: center;
+    p{
+        font-size: 1rem;
+        margin-left: 0.7rem;
+        font-weight: 700;
+        color: $blue;
+    }
+}
+    .circle {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        border: solid 1px $blue;
+        color: $blue;
+        text-align: center;
+        display: block;
+        font-weight: 800;
+        background-color: $white;
+    }
+}

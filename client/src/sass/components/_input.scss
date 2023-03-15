@@ -1,0 +1,252 @@
+div.form-group {
+    position: relative;
+    margin: 0.5rem 0;
+
+    p {
+        font-size: 1rem;
+        color: #bf1650;
+    }
+
+    p::before {
+        display: inline;
+        content: "⚠ ";
+    }
+
+    span {
+        font-size: 9px;
+        font-weight: 100;
+    }
+
+    label {
+        font-size: 1.16rem;
+        font-weight: 600;
+        color: $blue;
+    }
+
+    .input-field {
+        width: 100%;
+        position: relative;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    #tippySelect {
+        top: 45%;
+        right: 2.3rem
+    }
+
+    .tippy {
+        position: absolute;
+        font-size: 2.2rem;
+        color: $blue;
+        font-weight: bold;
+        right: 1rem;
+        top: 20%;
+        background: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+
+
+    input,
+    select {
+        font-family: $font;
+        height: 3.5rem;
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: solid 1px $yellow;
+        font-size: 1.2rem;
+        color: #caa45ebb;
+        transition: 0.3s ease;
+
+        &::placeholder {
+            font-family: $font;
+            color: #caa45ebb;
+            font-size: 1.2rem;
+        }
+
+        &:focus {
+            outline-color: $yellow;
+            outline-width: 1px;
+        }
+    }
+
+    select {
+
+        background-size: 15px;
+        background-image: url("../../../public/icons/caretdown.svg");
+        background-position: 245px center;
+        background-repeat: no-repeat;
+        appearence: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+    }
+
+
+    input[type='date']::-webkit-calendar-picker-indicator {
+        color: rgba(0, 0, 0, 0);
+        opacity: 1;
+        position: absolute !important;
+        background: url('../../../public/icons/calendar.svg');
+        background-repeat: no-repeat;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+        left: 0px;
+        top: 5px;
+    }
+
+    input[type='date']::-webkit-calendar-picker-indicator {
+        position: absolute;
+        margin-left: 10px;
+    }
+
+    input::-webkit-datetime-edit-fields-wrapper {
+        position: relative;
+        left: 2rem;
+    }
+
+    input::-webkit-datetime-edit {
+        position: relative;
+        left: 2rem;
+    }
+
+}
+
+.check {
+    margin-top: 4rem;
+}
+
+#check {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 100;
+    color: rgba(128, 128, 128, 0.658);
+
+    .span {
+        font-size: 12px;
+        max-width: 20rem;
+    }
+
+    input {
+        height: 2px;
+        width: 2px;
+        margin-right: 1rem;
+    }
+
+}
+
+input[type='checkbox'] {
+    appearance: none;
+    background: $white;
+    height: 1rem;
+    display: inline-block;
+    position: relative;
+
+    &:checked {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
+            inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+        color: $yellow;
+    }
+
+    &:active,
+    &:checked:active {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    &:checked:after {
+        content: '\2714';
+        font-size: 14px;
+        font-weight: bold;
+        position: absolute;
+        top: 0px;
+        left: 5px;
+        color: $yellow;
+    }
+}
+
+.container__document {
+    display: flex;
+    justify-content: space-around;
+
+    .type__document {
+        flex: 0 65%;
+        margin-right: 1rem;
+    }
+
+    .input-field {
+        input::-webkit-datetime-edit-fields-wrapper {
+            left: 1.2rem;
+        }
+
+        input::-webkit-datetime-edit {
+            left: 1.2rem;
+        }
+    }
+
+}
+
+.enlace {
+    a {
+        position: absolute;
+        font-size: 20px;
+        width: 24px;
+        height: 24px;
+        right: 30px;
+        text-align: center;
+        bottom: 20px;
+        padding: 0;
+        background-color: $white;
+        border: none;
+        border-radius: 50%;
+        color: $blue;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 75%);
+    }
+}
+
+.btn {
+    margin: 3rem 0;
+
+    button {
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: center;
+        height: 3rem;
+        width: 12rem;
+        background-color: rgba(243, 243, 243, 0.897);
+        color: $blue;
+        cursor: pointer;
+        border: 0.5px solid $yellow;
+        border-radius: 5px 0px 0px 5px;
+        -webkit-border-radius: 5px 0px 0px 5px;
+        -moz-border-radius: 5px 0px 0px 5px;
+        box-shadow: 4px 4px 7px 2px rgb(0 0 0 / 10%);
+
+    }
+
+    button:last-child {
+        width: 14.7rem;
+        font-weight: 100;
+        color: $yellow;
+        border-left: 0px solid $yellow;
+        border-radius: 0px 5px 5px 0px;
+        -webkit-border-radius: 0px 5px 5px 0px;
+        -moz-border-radius: 0px 5px 5px 0px;
+    }
+
+}
+
+.country__holder {
+    width: 27rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: auto;
+    grid-row-end:auto;
+}

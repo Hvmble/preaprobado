@@ -1,0 +1,22 @@
+div.logo {
+    display: flex;
+    justify-content: center;
+    a {
+      background-color: $white;
+      padding: 2rem 2.2rem 1.5rem 2.2rem;
+      border-radius: 0 0 1.2rem 1.2rem;
+      box-shadow: 2px 1px 0px 2px rgb(0 0 0 / 10%);
+      img {
+        width: 160px;
+      }
+    }
+  }
+  h1.title{
+    font-size: 3.2rem;
+    color: $blue;
+    text-align: center;
+    margin: 2rem auto;
+    span{
+        color: $yellow;
+    }
+}

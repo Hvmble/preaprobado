@@ -1,0 +1,23 @@
+button.bank-button {
+    max-width: 160px;
+    width: 100%;
+    min-height: 2rem;
+    border-radius: 0.5rem;
+    padding: 0 2rem;
+    border: solid 1px $yellow;
+    transition: all 0.5s ease;
+    background: rgb(200, 201, 212);
+    background: linear-gradient(0deg, rgba(200, 201, 212, 1) 0%, rgba(228, 229, 235, 1) 100%);
+
+    &:hover {
+        background: $blue
+    }
+}
+
+button.active {
+    background: $blue;
+
+    img {
+        filter: brightness(0) invert(1);
+    }
+}
